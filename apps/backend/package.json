@@ -1,5 +1,5 @@
 {
-  "name": "medusa-2.0-boilerplate-backend",
+  "name": "medusa-backend",
   "version": "0.0.2",
   "description": "A Prebaked Medusa 2.0 backend",
   "author": "Rasmus Puls",
@@ -18,7 +18,8 @@
     "ib": "init-backend",
     "start": "init-backend && cd .medusa/server && medusa start --verbose",
     "dev": "medusa develop",
-    "email:dev": "email dev --dir=./src/modules/email-notifications/templates --port=3002"
+    "email:dev": "email dev --dir=./src/modules/email-notifications/templates --port=3002",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@medusajs/admin-sdk": "2.10.2",
@@ -61,7 +62,7 @@
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
   },
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.15.5",
   "engines": {
     "node": "22.x",
     "npm": "10.x"
